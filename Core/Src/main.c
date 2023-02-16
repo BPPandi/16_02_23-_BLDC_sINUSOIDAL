@@ -122,7 +122,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	for(k=0;k<63;k++)
+	for(k=0;k<107;k++)
 	{
 		PhaseA = PhaseA +1;
 
@@ -137,9 +137,9 @@ int main(void)
 		TIM1->CCR3 = PhaseC_wave[PhaseA];
 		HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 		HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
-		delay_us(80);
+		//delay_us(80);
 	}
-	if(k>=63)
+	if(k>=107)
 	{
 		PhaseA=0;
 		k=0;
